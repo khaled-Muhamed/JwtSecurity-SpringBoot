@@ -3,8 +3,8 @@
 
 ## EndPoints:
   * `/api/login`:
-  - All is permitted to login first to get tokens (access / refresh)
-    -- use access token to access all resources (i,e add it to Autorization header)
+    - All is permitted to login first to get tokens (access / refresh)
+      -- use access token to access all resources (i,e add it to Autorization header)
   * `/api/users`
     - list all users in the system.
   * `/role/save`
