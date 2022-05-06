@@ -1,6 +1,15 @@
 # JwtSecurity-SpringBoot
 ## Project Title [TryingJWT]
 
+## Dependencies :
+  * Spring Data JPA
+  * PostgresQl driver
+  * Spring Web
+  * Spring Security
+  * Spring Boot DevTools
+  * Lombok
+
+
 ## EndPoints:
   * `/api/login`:
     - All is permitted to login first to get tokens (access / refresh)
