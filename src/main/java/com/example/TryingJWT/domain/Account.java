@@ -26,7 +26,8 @@ public class Account {
     private String name;
     private String username;
     private String password;
-
+    
+    // fetch is set to EAGER to fetch all roles when loading the User
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
 
