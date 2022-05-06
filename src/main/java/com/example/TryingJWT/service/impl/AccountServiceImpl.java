@@ -65,6 +65,7 @@ public class AccountServiceImpl implements AccountService, UserDetailsService {
 
     @Override
     public void addRoleToAccount(String username, String roleName) {
+        // you may need some validations here before just saving in DB
         log.info("Adding role {} to the user {}", roleName, username);
         Account account = userRepo.findByUsername(username);
         Role role = roleRepo.findByName(roleName);
@@ -81,6 +82,7 @@ public class AccountServiceImpl implements AccountService, UserDetailsService {
 
     @Override
     public List<Account> getAccounts() {
+        // try to use pagination here instead of loading all users
         log.info("Fetching all users");
         return userRepo.findAll();
     }
